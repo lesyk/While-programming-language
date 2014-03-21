@@ -2,4 +2,7 @@ x:=2;
 y:=2;
 if x=y && ! x=y then tmp:=0
 else{ tmp := 1
+};
+if x=y || ! x=y then tm:=0
+else{ tm := 1
 }
