@@ -1,4 +1,4 @@
-// $ANTLR 3.5 while_language/parsing/WhileLanguage.g 2014-03-21 14:44:12
+// $ANTLR 3.5 while_language/parsing/WhileLanguage.g 2014-03-21 17:07:46
 
 package while_language.parsing;
 
@@ -30,6 +30,8 @@ public class WhileLanguageLexer extends Lexer {
 	public static final int T__22=22;
 	public static final int T__23=23;
 	public static final int T__24=24;
+	public static final int T__25=25;
+	public static final int T__26=26;
 	public static final int ID=4;
 	public static final int NUM=5;
 	public static final int WS=6;
@@ -279,10 +281,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__18;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:23:7: ( 'else' )
-			// while_language/parsing/WhileLanguage.g:23:9: 'else'
+			// while_language/parsing/WhileLanguage.g:23:7: ( 'do' )
+			// while_language/parsing/WhileLanguage.g:23:9: 'do'
 			{
-			match("else"); 
+			match("do"); 
 
 			}
 
@@ -300,10 +302,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__19;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:24:7: ( 'false' )
-			// while_language/parsing/WhileLanguage.g:24:9: 'false'
+			// while_language/parsing/WhileLanguage.g:24:7: ( 'else' )
+			// while_language/parsing/WhileLanguage.g:24:9: 'else'
 			{
-			match("false"); 
+			match("else"); 
 
 			}
 
@@ -321,10 +323,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__20;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:25:7: ( 'if' )
-			// while_language/parsing/WhileLanguage.g:25:9: 'if'
+			// while_language/parsing/WhileLanguage.g:25:7: ( 'false' )
+			// while_language/parsing/WhileLanguage.g:25:9: 'false'
 			{
-			match("if"); 
+			match("false"); 
 
 			}
 
@@ -342,10 +344,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__21;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:26:7: ( 'then' )
-			// while_language/parsing/WhileLanguage.g:26:9: 'then'
+			// while_language/parsing/WhileLanguage.g:26:7: ( 'if' )
+			// while_language/parsing/WhileLanguage.g:26:9: 'if'
 			{
-			match("then"); 
+			match("if"); 
 
 			}
 
@@ -363,10 +365,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__22;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:27:7: ( 'true' )
-			// while_language/parsing/WhileLanguage.g:27:9: 'true'
+			// while_language/parsing/WhileLanguage.g:27:7: ( 'then' )
+			// while_language/parsing/WhileLanguage.g:27:9: 'then'
 			{
-			match("true"); 
+			match("then"); 
 
 			}
 
@@ -384,10 +386,11 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__23;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:28:7: ( '{' )
-			// while_language/parsing/WhileLanguage.g:28:9: '{'
+			// while_language/parsing/WhileLanguage.g:28:7: ( 'true' )
+			// while_language/parsing/WhileLanguage.g:28:9: 'true'
 			{
-			match('{'); 
+			match("true"); 
+
 			}
 
 			state.type = _type;
@@ -404,10 +407,11 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = T__24;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:29:7: ( '}' )
-			// while_language/parsing/WhileLanguage.g:29:9: '}'
+			// while_language/parsing/WhileLanguage.g:29:7: ( 'while' )
+			// while_language/parsing/WhileLanguage.g:29:9: 'while'
 			{
-			match('}'); 
+			match("while"); 
+
 			}
 
 			state.type = _type;
@@ -419,15 +423,55 @@ public class WhileLanguageLexer extends Lexer {
 	}
 	// $ANTLR end "T__24"
 
+	// $ANTLR start "T__25"
+	public final void mT__25() throws RecognitionException {
+		try {
+			int _type = T__25;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// while_language/parsing/WhileLanguage.g:30:7: ( '{' )
+			// while_language/parsing/WhileLanguage.g:30:9: '{'
+			{
+			match('{'); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__25"
+
+	// $ANTLR start "T__26"
+	public final void mT__26() throws RecognitionException {
+		try {
+			int _type = T__26;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// while_language/parsing/WhileLanguage.g:31:7: ( '}' )
+			// while_language/parsing/WhileLanguage.g:31:9: '}'
+			{
+			match('}'); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__26"
+
 	// $ANTLR start "NUM"
 	public final void mNUM() throws RecognitionException {
 		try {
 			int _type = NUM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:66:5: ( ( '0' .. '9' )+ )
-			// while_language/parsing/WhileLanguage.g:66:7: ( '0' .. '9' )+
+			// while_language/parsing/WhileLanguage.g:67:5: ( ( '0' .. '9' )+ )
+			// while_language/parsing/WhileLanguage.g:67:7: ( '0' .. '9' )+
 			{
-			// while_language/parsing/WhileLanguage.g:66:7: ( '0' .. '9' )+
+			// while_language/parsing/WhileLanguage.g:67:7: ( '0' .. '9' )+
 			int cnt1=0;
 			loop1:
 			while (true) {
@@ -476,8 +520,8 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = ID;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:67:5: ( ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )* )
-			// while_language/parsing/WhileLanguage.g:67:7: ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )*
+			// while_language/parsing/WhileLanguage.g:68:5: ( ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )* )
+			// while_language/parsing/WhileLanguage.g:68:7: ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )*
 			{
 			if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 				input.consume();
@@ -487,7 +531,7 @@ public class WhileLanguageLexer extends Lexer {
 				recover(mse);
 				throw mse;
 			}
-			// while_language/parsing/WhileLanguage.g:67:26: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )*
+			// while_language/parsing/WhileLanguage.g:68:26: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )*
 			loop2:
 			while (true) {
 				int alt2=2;
@@ -532,10 +576,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:69:5: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-			// while_language/parsing/WhileLanguage.g:69:9: ( ' ' | '\\t' | '\\r' | '\\n' )+
+			// while_language/parsing/WhileLanguage.g:70:5: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+			// while_language/parsing/WhileLanguage.g:70:9: ( ' ' | '\\t' | '\\r' | '\\n' )+
 			{
-			// while_language/parsing/WhileLanguage.g:69:9: ( ' ' | '\\t' | '\\r' | '\\n' )+
+			// while_language/parsing/WhileLanguage.g:70:9: ( ' ' | '\\t' | '\\r' | '\\n' )+
 			int cnt3=0;
 			loop3:
 			while (true) {
@@ -582,8 +626,8 @@ public class WhileLanguageLexer extends Lexer {
 
 	@Override
 	public void mTokens() throws RecognitionException {
-		// while_language/parsing/WhileLanguage.g:1:8: ( T__7 | T__8 | T__9 | T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | NUM | ID | WS )
-		int alt4=21;
+		// while_language/parsing/WhileLanguage.g:1:8: ( T__7 | T__8 | T__9 | T__10 | T__11 | T__12 | T__13 | T__14 | T__15 | T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | NUM | ID | WS )
+		int alt4=23;
 		switch ( input.LA(1) ) {
 		case '!':
 			{
@@ -643,105 +687,126 @@ public class WhileLanguageLexer extends Lexer {
 			alt4=11;
 			}
 			break;
-		case 'e':
+		case 'd':
 			{
 			int LA4_11 = input.LA(2);
-			if ( (LA4_11=='l') ) {
-				int LA4_22 = input.LA(3);
-				if ( (LA4_22=='s') ) {
-					int LA4_27 = input.LA(4);
-					if ( (LA4_27=='e') ) {
-						int LA4_32 = input.LA(5);
-						if ( ((LA4_32 >= '0' && LA4_32 <= '9')||(LA4_32 >= 'A' && LA4_32 <= 'Z')||(LA4_32 >= 'a' && LA4_32 <= 'z')) ) {
-							alt4=20;
-						}
-
-						else {
-							alt4=12;
-						}
-
-					}
-
-					else {
-						alt4=20;
-					}
-
+			if ( (LA4_11=='o') ) {
+				int LA4_24 = input.LA(3);
+				if ( ((LA4_24 >= '0' && LA4_24 <= '9')||(LA4_24 >= 'A' && LA4_24 <= 'Z')||(LA4_24 >= 'a' && LA4_24 <= 'z')) ) {
+					alt4=22;
 				}
 
 				else {
-					alt4=20;
+					alt4=12;
 				}
 
 			}
 
 			else {
-				alt4=20;
+				alt4=22;
+			}
+
+			}
+			break;
+		case 'e':
+			{
+			int LA4_12 = input.LA(2);
+			if ( (LA4_12=='l') ) {
+				int LA4_25 = input.LA(3);
+				if ( (LA4_25=='s') ) {
+					int LA4_32 = input.LA(4);
+					if ( (LA4_32=='e') ) {
+						int LA4_38 = input.LA(5);
+						if ( ((LA4_38 >= '0' && LA4_38 <= '9')||(LA4_38 >= 'A' && LA4_38 <= 'Z')||(LA4_38 >= 'a' && LA4_38 <= 'z')) ) {
+							alt4=22;
+						}
+
+						else {
+							alt4=13;
+						}
+
+					}
+
+					else {
+						alt4=22;
+					}
+
+				}
+
+				else {
+					alt4=22;
+				}
+
+			}
+
+			else {
+				alt4=22;
 			}
 
 			}
 			break;
 		case 'f':
 			{
-			int LA4_12 = input.LA(2);
-			if ( (LA4_12=='a') ) {
-				int LA4_23 = input.LA(3);
-				if ( (LA4_23=='l') ) {
-					int LA4_28 = input.LA(4);
-					if ( (LA4_28=='s') ) {
-						int LA4_33 = input.LA(5);
-						if ( (LA4_33=='e') ) {
-							int LA4_37 = input.LA(6);
-							if ( ((LA4_37 >= '0' && LA4_37 <= '9')||(LA4_37 >= 'A' && LA4_37 <= 'Z')||(LA4_37 >= 'a' && LA4_37 <= 'z')) ) {
-								alt4=20;
+			int LA4_13 = input.LA(2);
+			if ( (LA4_13=='a') ) {
+				int LA4_26 = input.LA(3);
+				if ( (LA4_26=='l') ) {
+					int LA4_33 = input.LA(4);
+					if ( (LA4_33=='s') ) {
+						int LA4_39 = input.LA(5);
+						if ( (LA4_39=='e') ) {
+							int LA4_44 = input.LA(6);
+							if ( ((LA4_44 >= '0' && LA4_44 <= '9')||(LA4_44 >= 'A' && LA4_44 <= 'Z')||(LA4_44 >= 'a' && LA4_44 <= 'z')) ) {
+								alt4=22;
 							}
 
 							else {
-								alt4=13;
+								alt4=14;
 							}
 
 						}
 
 						else {
-							alt4=20;
+							alt4=22;
 						}
 
 					}
 
 					else {
-						alt4=20;
+						alt4=22;
 					}
 
 				}
 
 				else {
-					alt4=20;
+					alt4=22;
 				}
 
 			}
 
 			else {
-				alt4=20;
+				alt4=22;
 			}
 
 			}
 			break;
 		case 'i':
 			{
-			int LA4_13 = input.LA(2);
-			if ( (LA4_13=='f') ) {
-				int LA4_24 = input.LA(3);
-				if ( ((LA4_24 >= '0' && LA4_24 <= '9')||(LA4_24 >= 'A' && LA4_24 <= 'Z')||(LA4_24 >= 'a' && LA4_24 <= 'z')) ) {
-					alt4=20;
+			int LA4_14 = input.LA(2);
+			if ( (LA4_14=='f') ) {
+				int LA4_27 = input.LA(3);
+				if ( ((LA4_27 >= '0' && LA4_27 <= '9')||(LA4_27 >= 'A' && LA4_27 <= 'Z')||(LA4_27 >= 'a' && LA4_27 <= 'z')) ) {
+					alt4=22;
 				}
 
 				else {
-					alt4=14;
+					alt4=15;
 				}
 
 			}
 
 			else {
-				alt4=20;
+				alt4=22;
 			}
 
 			}
@@ -751,42 +816,13 @@ public class WhileLanguageLexer extends Lexer {
 			switch ( input.LA(2) ) {
 			case 'h':
 				{
-				int LA4_25 = input.LA(3);
-				if ( (LA4_25=='e') ) {
-					int LA4_30 = input.LA(4);
-					if ( (LA4_30=='n') ) {
-						int LA4_34 = input.LA(5);
-						if ( ((LA4_34 >= '0' && LA4_34 <= '9')||(LA4_34 >= 'A' && LA4_34 <= 'Z')||(LA4_34 >= 'a' && LA4_34 <= 'z')) ) {
-							alt4=20;
-						}
-
-						else {
-							alt4=15;
-						}
-
-					}
-
-					else {
-						alt4=20;
-					}
-
-				}
-
-				else {
-					alt4=20;
-				}
-
-				}
-				break;
-			case 'r':
-				{
-				int LA4_26 = input.LA(3);
-				if ( (LA4_26=='u') ) {
-					int LA4_31 = input.LA(4);
-					if ( (LA4_31=='e') ) {
-						int LA4_35 = input.LA(5);
-						if ( ((LA4_35 >= '0' && LA4_35 <= '9')||(LA4_35 >= 'A' && LA4_35 <= 'Z')||(LA4_35 >= 'a' && LA4_35 <= 'z')) ) {
-							alt4=20;
+				int LA4_28 = input.LA(3);
+				if ( (LA4_28=='e') ) {
+					int LA4_35 = input.LA(4);
+					if ( (LA4_35=='n') ) {
+						int LA4_40 = input.LA(5);
+						if ( ((LA4_40 >= '0' && LA4_40 <= '9')||(LA4_40 >= 'A' && LA4_40 <= 'Z')||(LA4_40 >= 'a' && LA4_40 <= 'z')) ) {
+							alt4=22;
 						}
 
 						else {
@@ -796,30 +832,104 @@ public class WhileLanguageLexer extends Lexer {
 					}
 
 					else {
-						alt4=20;
+						alt4=22;
 					}
 
 				}
 
 				else {
-					alt4=20;
+					alt4=22;
+				}
+
+				}
+				break;
+			case 'r':
+				{
+				int LA4_29 = input.LA(3);
+				if ( (LA4_29=='u') ) {
+					int LA4_36 = input.LA(4);
+					if ( (LA4_36=='e') ) {
+						int LA4_41 = input.LA(5);
+						if ( ((LA4_41 >= '0' && LA4_41 <= '9')||(LA4_41 >= 'A' && LA4_41 <= 'Z')||(LA4_41 >= 'a' && LA4_41 <= 'z')) ) {
+							alt4=22;
+						}
+
+						else {
+							alt4=17;
+						}
+
+					}
+
+					else {
+						alt4=22;
+					}
+
+				}
+
+				else {
+					alt4=22;
 				}
 
 				}
 				break;
 			default:
-				alt4=20;
+				alt4=22;
 			}
+			}
+			break;
+		case 'w':
+			{
+			int LA4_16 = input.LA(2);
+			if ( (LA4_16=='h') ) {
+				int LA4_30 = input.LA(3);
+				if ( (LA4_30=='i') ) {
+					int LA4_37 = input.LA(4);
+					if ( (LA4_37=='l') ) {
+						int LA4_42 = input.LA(5);
+						if ( (LA4_42=='e') ) {
+							int LA4_47 = input.LA(6);
+							if ( ((LA4_47 >= '0' && LA4_47 <= '9')||(LA4_47 >= 'A' && LA4_47 <= 'Z')||(LA4_47 >= 'a' && LA4_47 <= 'z')) ) {
+								alt4=22;
+							}
+
+							else {
+								alt4=18;
+							}
+
+						}
+
+						else {
+							alt4=22;
+						}
+
+					}
+
+					else {
+						alt4=22;
+					}
+
+				}
+
+				else {
+					alt4=22;
+				}
+
+			}
+
+			else {
+				alt4=22;
+			}
+
 			}
 			break;
 		case '{':
 			{
-			alt4=17;
+			alt4=19;
 			}
 			break;
 		case '}':
 			{
-			alt4=18;
+			alt4=20;
 			}
 			break;
 		case '0':
@@ -833,7 +943,7 @@ public class WhileLanguageLexer extends Lexer {
 		case '8':
 		case '9':
 			{
-			alt4=19;
+			alt4=21;
 			}
 			break;
 		case 'A':
@@ -865,7 +975,6 @@ public class WhileLanguageLexer extends Lexer {
 		case 'a':
 		case 'b':
 		case 'c':
-		case 'd':
 		case 'g':
 		case 'h':
 		case 'j':
@@ -880,12 +989,11 @@ public class WhileLanguageLexer extends Lexer {
 		case 's':
 		case 'u':
 		case 'v':
-		case 'w':
 		case 'x':
 		case 'y':
 		case 'z':
 			{
-			alt4=20;
+			alt4=22;
 			}
 			break;
 		case '\t':
@@ -893,7 +1001,7 @@ public class WhileLanguageLexer extends Lexer {
 		case '\r':
 		case ' ':
 			{
-			alt4=21;
+			alt4=23;
 			}
 			break;
 		default:
@@ -1029,21 +1137,35 @@ public class WhileLanguageLexer extends Lexer {
 				}
 				break;
 			case 19 :
-				// while_language/parsing/WhileLanguage.g:1:115: NUM
+				// while_language/parsing/WhileLanguage.g:1:115: T__25
+				{
+				mT__25(); 
+
+				}
+				break;
+			case 20 :
+				// while_language/parsing/WhileLanguage.g:1:121: T__26
+				{
+				mT__26(); 
+
+				}
+				break;
+			case 21 :
+				// while_language/parsing/WhileLanguage.g:1:127: NUM
 				{
 				mNUM(); 
 
 				}
 				break;
-			case 20 :
-				// while_language/parsing/WhileLanguage.g:1:119: ID
+			case 22 :
+				// while_language/parsing/WhileLanguage.g:1:131: ID
 				{
 				mID(); 
 
 				}
 				break;
-			case 21 :
-				// while_language/parsing/WhileLanguage.g:1:122: WS
+			case 23 :
+				// while_language/parsing/WhileLanguage.g:1:134: WS
 				{
 				mWS(); 
 

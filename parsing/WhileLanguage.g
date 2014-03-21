@@ -27,11 +27,12 @@ statement returns [Statement value]
 
 base_statement returns [Statement value]
     : ID ':=' e=arith_expr                      { $value = new AssignStatement($ID.getText(), e); }
-    | 'if' c=bool_expr 'then' s1=base_statement
+    | ('if' c=bool_expr 'then' s1=base_statement
       'else' s2=base_statement                  { $value = new IfStatement(c,s1,s2); }
+      |'while' c=bool_expr 'do' s1=base_statement { $value = new WhileStatement(c,s1); })
     | '{' s=statement '}'                       { $value = s; }
     ;
-
+    
 bool_expr returns [BoolExpr value]
     : e=literal       { $value = e; }
       ( '&&' e=literal { $value = new AndExpr($value,e); } )*

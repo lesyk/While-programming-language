@@ -1,6 +1,6 @@
 x:=2;
 y:=2;
-if x!=y then tmp:=0
+if x=y then tmp:=0
 else{ tmp := 1;
       x := y;
       y := tmp
