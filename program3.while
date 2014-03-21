@@ -1,9 +1,5 @@
 x:=2;
 y:=2;
-a:=2;
-b:=2;
-if a=b && ! x=y then tmp:=0
-else{ tmp := 1;
-      x := y;
-      y := tmp
+if x=y && ! x=y then tmp:=0
+else{ tmp := 1
 }
