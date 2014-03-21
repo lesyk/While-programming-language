@@ -1,4 +1,4 @@
-// $ANTLR 3.5 while_language/parsing/WhileLanguage.g 2014-03-21 17:30:04
+// $ANTLR 3.5 while_language/parsing/WhileLanguage.g 2014-03-21 18:04:49
 
 package while_language.parsing;
 
@@ -490,10 +490,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = NUM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:68:5: ( ( '0' .. '9' )+ )
-			// while_language/parsing/WhileLanguage.g:68:7: ( '0' .. '9' )+
+			// while_language/parsing/WhileLanguage.g:73:5: ( ( '0' .. '9' )+ )
+			// while_language/parsing/WhileLanguage.g:73:7: ( '0' .. '9' )+
 			{
-			// while_language/parsing/WhileLanguage.g:68:7: ( '0' .. '9' )+
+			// while_language/parsing/WhileLanguage.g:73:7: ( '0' .. '9' )+
 			int cnt1=0;
 			loop1:
 			while (true) {
@@ -542,8 +542,8 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = ID;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:69:5: ( ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )* )
-			// while_language/parsing/WhileLanguage.g:69:7: ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )*
+			// while_language/parsing/WhileLanguage.g:74:5: ( ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )* )
+			// while_language/parsing/WhileLanguage.g:74:7: ( 'a' .. 'z' | 'A' .. 'Z' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )*
 			{
 			if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 				input.consume();
@@ -553,7 +553,7 @@ public class WhileLanguageLexer extends Lexer {
 				recover(mse);
 				throw mse;
 			}
-			// while_language/parsing/WhileLanguage.g:69:26: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )*
+			// while_language/parsing/WhileLanguage.g:74:26: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' )*
 			loop2:
 			while (true) {
 				int alt2=2;
@@ -598,10 +598,10 @@ public class WhileLanguageLexer extends Lexer {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// while_language/parsing/WhileLanguage.g:71:5: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-			// while_language/parsing/WhileLanguage.g:71:9: ( ' ' | '\\t' | '\\r' | '\\n' )+
+			// while_language/parsing/WhileLanguage.g:76:5: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+			// while_language/parsing/WhileLanguage.g:76:9: ( ' ' | '\\t' | '\\r' | '\\n' )+
 			{
-			// while_language/parsing/WhileLanguage.g:71:9: ( ' ' | '\\t' | '\\r' | '\\n' )+
+			// while_language/parsing/WhileLanguage.g:76:9: ( ' ' | '\\t' | '\\r' | '\\n' )+
 			int cnt3=0;
 			loop3:
 			while (true) {

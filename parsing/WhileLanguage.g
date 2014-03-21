@@ -34,9 +34,14 @@ base_statement returns [Statement value]
     ;
     
 bool_expr returns [BoolExpr value]
+    : e=negation_expr       { $value = e; }
+      ( '&&' e=negation_expr { $value = new AndExpr($value,e); }
+      | '||' e=negation_expr { $value = new OrExpr($value,e); })*
+    ;
+    
+negation_expr returns [BoolExpr value]
     : e=literal       { $value = e; }
-      ( '&&' e=literal { $value = new AndExpr($value,e); }
-      | '||' e=literal { $value = new OrExpr($value,e); })*
+      ( '!' e=literal { $value = new AndExpr($value,e); } ) *
     ;
 
 literal returns [BoolExpr value]
