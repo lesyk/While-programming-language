@@ -1,0 +1,5 @@
+// This should be the output of program1:
+bash-3.2$ java while_language/WhileLanguage program1.while 
+tmp	-> 20
+y	-> 20
+x	-> 10

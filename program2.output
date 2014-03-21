@@ -1,0 +1,7 @@
+// This should be the output of program2 (when the exercise is finished):
+bash-3.2$ java while_language/WhileLanguage program2.while 
+n	-> 20
+f1	-> 4181
+ans	-> 6765
+f2	-> 6765
+x	-> 21
